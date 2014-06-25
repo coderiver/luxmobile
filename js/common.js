@@ -7,5 +7,14 @@ head.ready(function() {
 		$(".js-popup").hide();
 	});
 
-	console.log($('body').html());
+	// console.log($('body').html());
+	// $(".js-btn").click(function(){
+	// 	$("js-menu").show();
+	// })
+	$('.js-btn').click(function(){
+        $('.js-menu').slideToggle();
+        // $('.js-menu').toggleClass('is-active');
+        return false;
+     })
+
 });

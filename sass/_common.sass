@@ -39,11 +39,120 @@
 // +font(book, cytiapro-black-webfont)  
 // =book
 // 	font-family: "book", Arial, sans-serif 
-	
+
++font(NautilusPompilus, nautilus)  
+=fn
+	font-family: "NautilusPompilus", Arial, sans-serif 
+
++font(HeliosCondensedBold, HeliosCondBold)  
+=fh
+	font-family: "HeliosCondensedBold", Arial, sans-serif 
+
++font(PFDinTextProRegular, PFDinTextProRegular)  
+=fd
+	font-family: "PFDinTextProRegular", Arial, sans-serif 
+
+$brown: #602d1d
+$brown-yellow: #fff5de
+$light-brown: #dcc9b4
+$light-brown2: #f8f3e7
+
 body
-	font-family: Arial, sans-serif 
-	font-size: 12px 
+	font-size: 32px 
 	line-height: 1.4
+	+fh
 
 
 // common blocks      
+.header
+	position: fixed
+	padding: 54px 0 0 43px
+	height: 151px
+	min-width: 355px
+	width: 100%
+	background: $brown-yellow
+	+box
+	.header__btn	
+		padding: 0
+		background: none
+		+s(menu-ico)
+	.header__logo
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -59px 0 0 -77px
+	.menu
+		position: absolute
+		top: 100%
+		left: 0
+		padding-bottom: 270px
+		width: 100%
+		text-align: center
+		background: $brown-yellow
+		display: none
+		li
+			height: 117px
+			border-top: 1px solid $light-brown
+			&:hover
+				background: $light-brown
+
+			&:first-child
+				border: none
+		a
+			color: $brown
+			font-size: 46px
+			line-height: 117px
+			text-transform: uppercase
+			text-decoration: none
+			display: block
+
+//logo
+.logo
+	+s(logo)
+	display: inline-block
+
+//btn
+.btn
+	display: inline-block
+	+border-radius(2px)
+	&.btn_light-brown
+		padding: 20px 50px
+		color: #a88a69
+		font-size: 45px
+		text-decoration: none
+		background: $light-brown2
+		+box-shadow(inset 1px 2px #fff)
+		border: 1px solid rgba(#ccc, 0.5)
+
+//container
+.container
+	overflow: hidden
+
+//field
+.field
+	position: relative
+	margin-top: -205px
+	padding-top: 72px
+	min-height: 458px
+	text-align: center
+	z-index: 2
+	background: url(../img/bg.png) repeat-x 0 0
+	overflow: hidden
+	background-size: cover 
+	&:before
+		position: absolute
+		content: ''
+		left: 0
+		bottom: 120px 
+		+s(pic-left) 
+	&:after
+		position: absolute
+		content: ''
+		right: 0
+		bottom: 0  
+		+s(pic-right)
+
+//banner
+.banner
+	img
+		display: block
