@@ -1,6 +1,11 @@
 .bg
 	background: url(../img/bg1.jpg) repeat-y 0 0
 	overflow: hidden
+	+background-size(100%, auto)
+.bg1
+	overflow: hidden
+	background: url(../img/bg0.jpg) repeat-y 0 0
+	+background-size(100%, auto)
 .box
 	+s(pic-right)
 	width: 251px
@@ -28,10 +33,13 @@
 	p
 		font-size: 16px 
 		color: #804A32
-		margin-top: 22px  
+		margin-top: 12px  
 		em
 			+fd
 			font-style: normal 
+			font-size: 13px 
+	p+p
+		margin-top: 16px 
 	.item__more
 		border-radius: 4px
 		background-clip: padding-box
@@ -43,11 +51,11 @@
 		font-weight: normal
 		text-decoration: none
 		text-shadow: 0 1px 0 #fff
-		padding: 10px 15px
+		padding: 6px 10px
 		cursor: pointer 
 		line-height: 1
 		border: 1px solid rgba(#A8896B,.6)
-		margin-top: 14px 
+		margin-top: 24px 
 
 	.item__pic
 		margin: 0 auto
