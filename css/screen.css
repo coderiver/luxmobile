@@ -54,3 +54,19 @@ body { font-size: 16px; line-height: 1.4; font-family: "HeliosCondensedBold", Ar
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+.extreme__top { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; }
+.extreme__top img { display: block; width: 90%; }
+
+.extreme__bottom { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; color: white; font-size: 18px; padding: 60px 20px 100px 20px; text-align: center; }
+.extreme__bottom p { margin: 0 20px 46px 20px; }
+.extreme__bottom .extreme__video { box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); width: 80%; margin: 0 auto; display: block; }
+.extreme__bottom .extreme__video img { display: block; width: 100%; }
+
+.extreme__red, .extreme__purple, .extreme__wood { background: url(../img/bg2.jpg) no-repeat 0 0; background-size: cover; color: white; text-align: center; font-size: 18px; padding-bottom: 25px; padding-left: 10px; padding-right: 10px; }
+.extreme__red p, .extreme__purple p, .extreme__wood p { margin: 0 20px 0px 20px; }
+.extreme__red .extreme__pic img, .extreme__purple .extreme__pic img, .extreme__wood .extreme__pic img { display: block; width: 100%; position: relative; top: -20px; margin-bottom: 10px; }
+
+.extreme__purple { background: url(../img/bg3.jpg) no-repeat 0 0; }
+
+.extreme__wood { background: url(../img/bg1.jpg) no-repeat 0 0; }
