@@ -78,6 +78,13 @@ body { font-size: 16px; line-height: 1.4; font-family: "HeliosCondensedBold", Ar
 .item { width: 292px; margin: 0 auto; background: url(../img/item.png) no-repeat 0 100%; -moz-background-size: 100% auto; -webkit-background-size: 100% auto; background-size: 100% auto; margin-bottom: 220px; }
 .item.first { margin-top: 220px; }
 .item.last { margin-bottom: 0; }
+.item.item_video { margin-bottom: 80px; }
+.item.item_video.last { margin-bottom: 0; }
+.item.item_video.first { margin-top: 30px; }
+.item.item_video .item__pic { margin-top: 0; margin-left: 0; margin-right: 0; padding-left: 23px; padding-top: 23px; padding-right: 23px; margin-bottom: 20px; }
+.item.item_video .item__content { margin-top: 0; }
+.item.item_video .item__pic { top: 0; }
+.item.item_video h2 { color: #72502e; font-size: 22px; }
 .item .item__content { padding: 0 23px 15px 23px; margin-top: -250px; }
 .item h2 { font-size: 27px; font-weight: normal; color: #dd4f1a; font-family: "NautilusPompilus", Arial, sans-serif; }
 .item p { font-size: 16px; color: #804a32; margin-top: 12px; }
