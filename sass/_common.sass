@@ -58,40 +58,54 @@ $light-brown: #dcc9b4
 $light-brown2: #f8f3e7
 
 body
-	font-size: 32px 
+	font-size: 16px 
 	line-height: 1.4
 	+fh
+	padding-top: 75px 
 
 
 // common blocks      
 .header
 	position: fixed
-	padding: 54px 0 0 43px
-	height: 151px
+	//padding: 27px 0 0 21px
+	height: 75px
+	top: 0 
 	min-width: 355px
+	min-width: 320px 
 	width: 100%
 	background: $brown-yellow
-	+box
+	box-shadow: 0 2px 4px rgba(#000, .5)
+	z-index: 200
 	.header__btn	
 		padding: 0
 		background: none
 		+s(menu-ico)
+		position: absolute
+		left: 22px 
+		top: 26px 
+		width: 28px
+		height: 23px  
+		+background-size(28px, 23px)
 	.header__logo
 		position: absolute
-		top: 50%
+		top: 5px
 		left: 50%
-		margin: -59px 0 0 -77px
+		margin: 0 0 0 -38px
+		width: 77px
+		height: 59px
+		+background-size(100%,100%)
+		background-repeat: no-repeat 
 	.menu
 		position: absolute
 		top: 100%
 		left: 0
-		padding-bottom: 270px
+		//padding-bottom: 270px
 		width: 100%
 		text-align: center
 		background: $brown-yellow
 		display: none
 		li
-			height: 117px
+			height: 58px
 			border-top: 1px solid $light-brown
 			&:hover
 				background: $light-brown
@@ -100,8 +114,8 @@ body
 				border: none
 		a
 			color: $brown
-			font-size: 46px
-			line-height: 117px
+			font-size: 23px
+			line-height: 58px
 			text-transform: uppercase
 			text-decoration: none
 			display: block
@@ -116,9 +130,9 @@ body
 	display: inline-block
 	+border-radius(2px)
 	&.btn_light-brown
-		padding: 20px 50px
+		padding: 10px 25px
 		color: #a88a69
-		font-size: 45px
+		font-size: 23px
 		text-decoration: none
 		background: $light-brown2
 		+box-shadow(inset 1px 2px #fff)
@@ -131,28 +145,42 @@ body
 //field
 .field
 	position: relative
-	margin-top: -205px
-	padding-top: 72px
-	min-height: 458px
+	margin-top: -6px 
+	// margin-top: -205px
+	// padding-top: 72px
+	min-height: 220px
 	text-align: center
-	z-index: 2
+	z-index: 20
 	background: url(../img/bg.png) repeat-x 0 0
 	overflow: hidden
 	background-size: cover 
+	padding-top: 32px 
 	&:before
 		position: absolute
 		content: ''
 		left: 0
+		top: 40% 
 		bottom: 120px 
 		+s(pic-left) 
+		width: 163px
+		height: 143px
+		+background-size(163px, 143px)
 	&:after
 		position: absolute
 		content: ''
 		right: 0
 		bottom: 0  
 		+s(pic-right)
+		width: 251px
+		height: 199px
+		+background-size(251px, 199px)
 
 //banner
 .banner
+	background-size: cover
+	display: block
+	background-repeat: no-repeat 
+	background-position: 50% 0 
 	img
 		display: block
+		width: 100% 
