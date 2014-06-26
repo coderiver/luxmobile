@@ -1,5 +1,11 @@
 head.ready(function() {
 
+
+
+	if (window_hash) {
+		//item.removeClass('is-active');
+		$(window_hash).addClass('is-active');
+	};
 	var agent = navigator.userAgent,
 	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 
