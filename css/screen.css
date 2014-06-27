@@ -81,7 +81,7 @@ body { font-size: 16px; line-height: 1.4; font-family: "HeliosCondensedBold", Ar
 
 .extreme__bottom { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; color: white; font-size: 18px; padding: 60px 20px 100px 20px; text-align: center; }
 .extreme__bottom p { margin: 0 20px 46px 20px; }
-.extreme__bottom .extreme__video { box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); width: 80%; margin: 0 auto; display: block; }
+.extreme__bottom .extreme__video { box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); width: 80%; margin: 0 auto; display: block; width: 246px; height: 138px; }
 .extreme__bottom .extreme__video img { display: block; width: 100%; }
 
 .extreme__red, .extreme__purple, .extreme__wood { background: url(../img/bg2.jpg) no-repeat 0 0; background-size: cover; color: white; text-align: center; font-size: 18px; padding-bottom: 25px; padding-left: 10px; padding-right: 10px; }
