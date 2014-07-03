@@ -34,4 +34,21 @@ head.ready(function() {
         return false;
      })
 
+	$(window).scroll(function(event) {
+		t = $(window).scrollTop();
+		h = $(window).height();
+		console.log(t);
+		$('.chip').each(function(index, el) {
+			thist = $(this).offset().top;
+			if(thist<(t+h/2) && thist>t){
+				$(this).addClass('is-onscreen');
+			}
+			else{
+				$(this).removeClass('is-onscreen');
+			}
+			//if($(this).scrollTop)
+				//.offset().top
+		});
+	});
+
 });

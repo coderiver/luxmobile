@@ -70,7 +70,8 @@ body { font-size: 16px; line-height: 1.4; font-family: "HeliosCondensedBold", Ar
 
 .copy { position: relative; text-align: center; line-height: 1.6; color: #675442; margin: 20px 0; z-index: 20; }
 
-.chip { margin-bottom: 80px; text-align: center; position: relative; z-index: 100; }
+.chip { margin-bottom: 80px; text-align: center; position: relative; z-index: 100; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+.chip.is-onscreen { -webkit-transform: scale(1.1) rotate(2deg); -moz-transform: scale(1.1) rotate(2deg); -ms-transform: scale(1.1) rotate(2deg); -o-transform: scale(1.1) rotate(2deg); transform: scale(1.1) rotate(2deg); }
 
 .mega { font-family: "NautilusPompilus", Arial, sans-serif; text-align: center; font-weight: normal; margin-bottom: 20px; font-size: 33px; color: #72512e; text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); margin: 30px 0; }
 
