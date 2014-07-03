@@ -23,7 +23,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: PFDinTextProRegular; src: url("fonts/PFDinTextProRegular.eot"); src: url("fonts/PFDinTextProRegular.eot?#iefix") format("embedded-opentype"), url("fonts/PFDinTextProRegular.woff") format("woff"), url("fonts/PFDinTextProRegular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-body { font-size: 16px; line-height: 1.4; font-family: "HeliosCondensedBold", Arial, sans-serif; padding-top: 75px; }
+body { font-size: 16px; line-height: 1.4; font-family: Arial, Tahoma, Verdana; padding-top: 75px; }
 
 .header { position: fixed; height: 75px; top: 0; min-width: 355px; min-width: 320px; width: 100%; background: #fff5de; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); z-index: 200; }
 .header .header__btn { padding: 0; background: none; background-image: url('data:"image/png";base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAuAgMAAADvpVk1AAAADFBMVEUAAACSiXaSiXaSiXYd+iewAAAAA3RSTlMAEe7uHSixAAAAI0lEQVQoz2P4jwIOMAw0f7CDVSigYcDDKxQFOAx4+Ayy9AQAy5CM1vnjha0AAAAASUVORK5CYII='); width: 57px; height: 46px; position: absolute; left: 22px; top: 26px; width: 28px; height: 23px; -moz-background-size: 28px 23px; -webkit-background-size: 28px 23px; background-size: 28px 23px; }
