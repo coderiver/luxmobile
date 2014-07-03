@@ -37,7 +37,7 @@ head.ready(function() {
 	$(window).scroll(function(event) {
 		t = $(window).scrollTop();
 		h = $(window).height();
-		console.log(t);
+		//console.log(t);
 		$('.chip').each(function(index, el) {
 			thist = $(this).offset().top;
 			if(thist<(t+h/2) && thist>t){
